@@ -1,0 +1,21 @@
+
+
+  .carta {
+    background-color: red;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .carta img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .carta p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
