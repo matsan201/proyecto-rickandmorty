@@ -34,13 +34,14 @@ function App() {
       access && navigate('/home');
 
     } catch (error) {
-        console.log(error.massage);
+        console.log(error.message);
     }
     
  }
 
 useEffect(() => {
   !access && navigate('/');
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [access]);
   
  

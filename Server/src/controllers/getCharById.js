@@ -5,6 +5,7 @@ const getCharById = async (req, res)=> {
     try {
         const { id } = req.params;
         const { data } = await axios.get(`${URL}${id}`)
+        console.log(data);
 
         if(!data.name) throw new Error(`Faltan datos de Character de ID: ${id}`)
     

@@ -1,12 +1,16 @@
-const {User} = require('../DB_connection');
+const { User } = require('../DB_connection');
 
 module.exports = async (req, res)=> {
     try {
+        console.log('Entró en el controlador de login');
         const {email, password} = req.query;
+        console.log('Email:', email);
+        console.log('Password:', password);
 
         if(!email || !password) return res.status(400).send('Faltan datos')
 
-        const user = await User.findOne({where: {email}})
+        const user = await User.findOne({where: { email }})
+        console.log(user);
 
         if(!user) return res.status(404).send('Usuario no encontrado')
 
