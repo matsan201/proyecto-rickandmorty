@@ -11,8 +11,7 @@ import Forms from "./components/Form";
 import Favorites from "./components/Favorites";
 
 
-const email = 'matiasanchez999@gmail.com';
-const password = 'asd123';
+
 const URL = 'http://localhost:3001/rickandmorty/login/';
 
 function App() {
